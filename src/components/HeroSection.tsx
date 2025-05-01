@@ -2,11 +2,11 @@ import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { ArrowDownIcon } from 'lucide-react';
-import TypingEffect from '@/hooks/TypingEffects';
 import { useNavigate } from 'react-router-dom';
 import { FaCode, FaRobot, FaUserGraduate, FaPalette } from 'react-icons/fa';
 import { dynamicWords } from './data/data';
 import { fadeInUpVariants } from '@/hooks/motionVariants';
+import TypingEffect from '@/hooks/TypingEffects';
 
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null);

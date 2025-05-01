@@ -38,8 +38,8 @@ export default function AboutSection({ isLeft, color }: { isLeft: boolean; color
                 </div>
 
                 {/* Scrollable Paragraph Box */}
-                <div className="relative p-3 bg-white/20 dark:bg-black/20 rounded-xl border border-primary/30 max-h-[360px]  min-h-[180px] overflow-hidden">
-                  <div className={`text-lg text-gray-700 dark:text-gray-300 text-justify pr-2 overflow-y-auto min-h-[180px] transition-all duration-300 ${isExpanded ? 'max-h-[320px]' : 'max-h-[100px]'}`}>
+                <div className="relative p-3 bg-white/20 dark:bg-black/20 rounded-xl border border-primary/30 overflow-hidden">
+                  <div className={`text-lg text-gray-700 dark:text-gray-300 text-justify pr-2 overflow-y-auto min-h-[100px] transition-all duration-300 ${isExpanded ? 'max-h-[320px]' : 'max-h-[100px]'}`}>
                     {isExpanded ? (
                       <>
                         I am a passionate <span className="text-primary font-mono font-bold">Computer Science & Engineering</span> graduate from <b>Symbiosis Institute of Technology, Symbiosis International (Deemed University), India</b>, with a deep focus on <span className="text-primary font-mono font-bold">AI, Machine Learning, Robotics, IoT, and Full-stack development</span>. My journey has been marked by a blend of <b>research</b> and <b>real-world development</b>, where I’ve led several innovative projects and contributed to impactful papers in renowned conferences like VISHWACON and ICRIC. Throughout my career, I’ve developed scalable solutions, including <b>robotics</b> and <b>AI systems</b>, optimized web applications, and enhanced embedded systems. My technical skills span across{' '}
@@ -55,7 +55,7 @@ export default function AboutSection({ isLeft, color }: { isLeft: boolean; color
 
                 {/* Button Outside Box */}
                 <div className="text-right">
-                  <button onClick={() => setIsExpanded((prev) => !prev)} className="text-primary font-semibold focus:outline-none bg-white/70 dark:bg-black/40 px-4 py-1 rounded shadow-sm">
+                  <button onClick={() => setIsExpanded((prev) => !prev)} className="text-primary font-semibold focus:outline-none bg-white/70 dark:bg-black/40 px-4 py-1 rounded-md shadow-sm">
                     {isExpanded ? 'Read Less' : 'Read More'}
                   </button>
                 </div>
