@@ -23,11 +23,11 @@ export default function AboutSection({ isLeft, color }: { isLeft: boolean; color
           <div className="grid gap-12 items-center object-cover">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: '-100px' }} variants={containerVariants} className="relative flex flex-col lg:flex-row gap-8 items-start min-h-[500px] max-w-[1200px] mx-auto overflow-hidden">
               {/* Wobbly Blob Background */}
-              <motion.div className="absolute -top-10 -left-10 w-80 h-80 bg-primary/50 dark:bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-random-float z-0" style={{ pointerEvents: 'none' }} />
+              {/* <motion.div className="absolute -top-10 -left-10 w-80 h-80 bg-primary/50 dark:bg-primary/30 rounded-full mix-blend-multiply filter blur-3xl animate-random-float z-0" style={{ pointerEvents: 'none' }} /> */}
 
               {/* Image Section */}
               <div className="relative z-10 flex justify-center w-full lg:w-1/2">
-                <img src="/about_image.png" alt="Santhosh Image" className="object-cover rounded-[300px] border-4 border-primary w-full max-w-[500px] mx-auto" />
+                <img src="about_image.png" alt="Santhosh Image" className="object-cover rounded-[300px] border-4 border-primary w-full max-w-[500px] mx-auto" />
               </div>
 
               {/* About Me Content */}

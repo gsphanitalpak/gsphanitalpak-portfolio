@@ -62,7 +62,7 @@ export default function Header() {
     <motion.header initial={{ y: -100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5 }} className={`fixed top-0 left-0 right-0 z-50 pt-4 transition-all duration-300 ${scrolled ? 'bg-transparent' : 'backdrop-blur-md'}`}>
       <div className="nav-bar flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold hover:text-primary transition-colors">
-          {darkMode ? <img src="/final_logo_dark.svg" alt="Santhosh Logo Dark" className="h-20 w-auto" /> : <img src="/final_logo_light.svg" alt="Santhosh Logo Light" className="logo h-20 w-auto" />}
+          {darkMode ? <img src="final_logo_dark.svg" alt="Santhosh Logo Dark" className="h-20 w-auto" /> : <img src="final_logo_light.svg" alt="Santhosh Logo Light" className="logo h-20 w-auto" />}
         </Link>
 
         <nav className="hidden md:flex space-x-8">

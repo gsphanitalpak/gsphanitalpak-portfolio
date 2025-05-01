@@ -3,7 +3,7 @@ export const blogs = [
     id: 1,
     title: 'Setting Up a Headless Raspberry Pi with VNC',
     date: '2025-04-29',
-    image: '/blog/headless-pi-vnc.png',
+    image: 'blog/headless-pi-vnc.png',
     excerpt: 'Learn how to set up your Raspberry Pi without a monitor or keyboard using VNC for remote desktop access.',
     content: `# Setting Up a Headless Raspberry Pi with TigerVNC for Remote Access
 If you're someone who loves working on Raspberry Pi projects but doesn't want to keep a monitor and keyboard attached — that defeats the portability of the Pi — then setting up your Raspberry Pi in "headless" mode is the way to go. In this guide, I'll walk you through setting up your Raspberry Pi without a monitor and configuring TigerVNC for remote access. This allows you to access the Raspberry Pi's desktop environment from any device on the same network.

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useMemo } from 'react';
 
 interface TypingEffectProps {
   words: string[];
@@ -11,6 +11,8 @@ export default function TypingEffect({ words, typingSpeed = 100, deletingSpeed =
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [text, setText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
+
+  const longestWordLength = useMemo(() => Math.max(...words.map((w) => w.length)), [words]);
 
   useEffect(() => {
     const current = words[currentWordIndex];
@@ -37,9 +39,14 @@ export default function TypingEffect({ words, typingSpeed = 100, deletingSpeed =
   }, [text, isDeleting, currentWordIndex, words, typingSpeed, deletingSpeed, delayBetween]);
 
   return (
-    <span className="text-primary font-semibold inline-flex">
-      {text}
-      <span className="animate-blink ml-1 inline-block align-middle bg-primary dark:bg-primary" style={{ width: '5px', height: '1.1em' }} />
+    <span
+      className="text-primary font-semibold inline-block whitespace-nowrap"
+      style={{ minWidth: `${longestWordLength + 1}ch` }} // +1 for cursor
+    >
+      <span className="inline-block align-baseline">
+        {text}
+        <span className="inline-block align-baseline bg-primary dark:bg-primary animate-blink" style={{ width: '1ch', height: '1em', marginLeft: '2px' }} />
+      </span>
     </span>
   );
 }

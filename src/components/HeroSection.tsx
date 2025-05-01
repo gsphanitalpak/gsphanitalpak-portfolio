@@ -40,7 +40,7 @@ export default function HeroSection() {
 
           <motion.h3 custom={2} initial="hidden" animate="visible" variants={fadeInUpVariants} className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extralight font-mono tracking-tight leading-tight text-left">
             Transforming <br />
-            <span className="inline-block align-middle font-mono font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-left">
+            <span className="inline-block align-middle font-mono font-extrabold text-xl sm:text-2xl md:text-3xl lg:text-4xl text-left py-1">
               <TypingEffect words={dynamicWords} />
             </span>
             <br /> into functional projects and credible publications inspiring innovation and enabling intelligent systems.
@@ -75,7 +75,7 @@ export default function HeroSection() {
               border: '4px solid hsl(var(--border))',
             }}
           >
-            <motion.img src="/logo_001.png" alt="Avatar" className="object-contain p-2 w-full h-full" animate={{ y: [0, 20, 0] }} transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }} />
+            <motion.img src="logo_001.png" alt="Avatar" className="object-contain p-2 w-full h-full" animate={{ y: [0, 20, 0] }} transition={{ repeat: Infinity, duration: 2, ease: 'easeInOut' }} />
 
             {/* Orbiting Icons */}
             <motion.div className="absolute inset-0 z-10 pointer-events-none" style={{ transformOrigin: 'center' }} animate={{ rotate: 360 }} transition={{ repeat: Infinity, duration: 20, ease: 'linear' }}>
