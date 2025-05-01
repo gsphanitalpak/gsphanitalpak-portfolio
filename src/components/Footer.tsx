@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex  gap-10 justify-between">
           <div className="md:col-span-1">
             <Link to="/" className="text-2xl font-bold hover:text-primary transition-colors">
-              {darkMode ? <img src="/final_logo_dark.svg" alt="Santhosh Logo Dark" className="h-20 w-auto" /> : <img src="/final_logo_light.svg" alt="Santhosh Logo Light" className="logo h-20 w-auto" />}
+              {darkMode ? <img src="final_logo_dark.svg" alt="Santhosh Logo Dark" className="h-20 w-auto" /> : <img src="final_logo_light.svg" alt="Santhosh Logo Light" className="logo h-20 w-auto" />}
             </Link>
             <p className="mt-4 text-gray-600 dark:text-gray-400">Building innovative solutions at the intersection of software development and academic research.</p>
             <div className="flex space-x-4 mt-6">
@@ -47,7 +47,7 @@ export default function Footer() {
                         </g>
                       </svg>
                     );
-                    href = 'https://github.com/yourusername';
+                    href = 'https://github.com/gsphanitalpak';
                     break;
                   case 'LinkedIn':
                     svgIcon = (
@@ -63,7 +63,7 @@ export default function Footer() {
                         />
                       </svg>
                     );
-                    href = 'https://linkedin.com/in/yourusername';
+                    href = 'www.linkedin.com/in/santhosh-phanitalpak-gandhala';
                     break;
                   case 'Google Scholar':
                     svgIcon = (
@@ -79,7 +79,7 @@ export default function Footer() {
                         />
                       </svg>
                     );
-                    href = 'https://scholar.google.com/citations?user=youruserid';
+                    href = 'https://scholar.google.com/citations?user=GZn0hCAAAAAJ&hl=en&oi=ao';
                     break;
                   case 'Email':
                     svgIcon = (
@@ -87,7 +87,7 @@ export default function Footer() {
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 6h18c1.1 0 1.99.9 1.99 2L21 18c0 1.1-.89 2-1.99 2H3c-1.1 0-1.99-.9-1.99-2L3 8c0-1.1.89-2 1.99-2z M3 6l9 6 9-6" />
                       </svg>
                     );
-                    href = 'mailto:your.email@example.com';
+                    href = 'mailto:gsanthoshphanitalpak@gmail.com';
                     break;
                   default:
                     break;
