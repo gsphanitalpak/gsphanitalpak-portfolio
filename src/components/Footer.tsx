@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex  gap-10 justify-between">
           <div className="md:col-span-1">
             <Link to="/" className="text-2xl font-bold hover:text-primary transition-colors">
-              {darkMode ? <img src="final_logo_dark.svg" alt="Santhosh Logo Dark" className="h-20 w-auto" /> : <img src="final_logo_light.svg" alt="Santhosh Logo Light" className="logo h-20 w-auto" />}
+              {darkMode ? <img src="final_logo_white.svg" alt="Santhosh Logo Dark" className="h-20 w-auto" /> : <img src="final_logo_black.svg" alt="Santhosh Logo Light" className="logo h-20 w-auto" />}
             </Link>
             <p className="mt-4 text-gray-600 dark:text-gray-400">Building innovative solutions at the intersection of software development and academic research.</p>
             <div className="flex space-x-4 mt-6">
