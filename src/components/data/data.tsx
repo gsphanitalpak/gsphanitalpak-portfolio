@@ -402,7 +402,7 @@ export const projects: Project[] = [
     tags: ['Vite', 'TypeScript', 'React', 'Shadcn-UI', 'Tailwind CSS', 'Web Development'],
     image: 'projects/portfolio.jpg',
     github: 'https://github.com/santhosh/portfolio',
-    live: 'https://your-portfolio-link.com',
+    live: 'https://gsphanitalpak.github.io/gsphanitalpak-portfolio/',
     type: ['Software Development', 'Personal Projects'],
   },
 ];
