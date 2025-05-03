@@ -15,25 +15,25 @@ interface ContactInfo {
 
 const contactInfo: ContactInfo[] = [
   {
-    icon: '📧',
+    icon: '✉️',
     title: 'Email',
     value: 'gsanthoshphanitalpak@gmail.com',
     link: 'mailto:gsanthoshphanitalpak@gmail.com',
   },
   {
-    icon: '🔗',
+    icon: '💼',
     title: 'LinkedIn',
     value: 'santhosh-phanitalpak-gandhala',
     link: 'https://www.linkedin.com/in/santhosh-phanitalpak-gandhala',
   },
   {
-    icon: '💻',
+    icon: '🧑🏽‍💻',
     title: 'GitHub',
     value: 'github.com/gsphanitalpak',
     link: 'https://github.com/gsphanitalpak',
   },
   {
-    icon: '📱',
+    icon: '☎️',
     title: 'Mobile',
     value: '+91 8179439677',
     link: ' ',
@@ -76,7 +76,7 @@ export default function ContactSection() {
   };
 
   return (
-    <section id="contact" className="pb-4 px-10 mt-0">
+    <section id="contact" className="pb-4 px-10 mt-0 bg-background">
       <div className="container-custom">
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.6 }} className="text-center space-y-4 mb-12">
           <div className=" text-left">
@@ -96,7 +96,7 @@ export default function ContactSection() {
               <CardContent className="space-y-4">
                 {contactInfo.map((info, index) => (
                   <a key={index} href={info.link} target="_blank" rel="noopener noreferrer" className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                    <div className="text-2xl">{info.icon}</div>
+                    <div className="text-3xl">{info.icon}</div>
                     <div>
                       <p className=" text-gray-600 dark:text-gray-400">{info.title}</p>
                       <h3 className="font-medium">{info.value}</h3>

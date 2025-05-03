@@ -17,7 +17,7 @@ export default function AboutSection({ isLeft, color }: { isLeft: boolean; color
   };
 
   return (
-    <section id="about" className="relative py-20 px-4 bg-secondary/50 dark:bg-gray-800/20 overflow-hidden object-cover">
+    <section id="about" className="relative py-20 px-4 bg-background overflow-hidden object-cover">
       <motion.div className="container-custom relative z-10 space-x-4 object-cover" custom={0} initial="hidden" whileInView="visible" variants={fadeInUpVariants}>
         <motion.div className="object-cover">
           <div className="grid gap-12 items-center object-cover">

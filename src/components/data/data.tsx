@@ -21,23 +21,23 @@ export const timelineData = [
   },
   {
     year: '2023',
-    title: 'Software Developer Intern | Volunteer | Japan Study Tour',
+    title: 'NGO Volunteer | Research | Japan Study Tour',
     picture: ['icons/japan_black.png', 'icons/japan_white.png'],
-    events: ['Designed and deployed a Donor Management System (MySQL, PHP) for Door Step School.', 'Optimized WordPress backend for better content editing and responsive design.', 'Participated in a Japan study tour, attending lectures at Chiba University and Ritsumeikan University', 'Presented papers in conferences: VISHWACON-2023, ICRIC-2023'],
+    events: ['Created a donor management system for Door Step School (MySQL, PHP).', 'Improved website performance and mobile responsiveness for NGO site.', 'Optimized WordPress backend for better content editing and responsive design.', 'Participated in a Japan study tour, attending lectures at Chiba University and Ritsumeikan University.', 'Presented papers in conferences: VISHWACON-2023, ICRIC-2023.'],
     color: 'rose',
   },
   {
     year: '2024',
-    title: 'R&D Intern | Software Developer Intern',
+    title: 'Internships | Robotics Integration | Publications',
     picture: ['icons/developer_black.png', 'icons/developer_white.png'],
-    events: ['Worked as an R&D Intern at M/s Technospirit, supporting RTL design and logic simulation using Verilog & Xilinx Vivado.', 'Refactored React.js frontend for the internal R&D dashboard.', 'Developed scalable PHP-based WordPress templates for Byline Learning Solutions, improving content deployment time by 40%.', 'Integrated robotics and embedded systems projects (Arduino/Raspberry Pi) featured in a nationally distributed project booklet.', 'Participated in a Japan study tour, attending lectures at Chiba University and Ritsumeikan University in June 2024.', 'Presented papers in conferences: ICAECT-2024, ACOIT-2024, ICDSM-2024'],
+    events: ['Interned at M/s Technospirit: supported RTL design and logic simulation using Verilog & Xilinx Vivado.', 'Refactored React.js frontend for internal R&D dashboard.', 'Developed reusable WordPress templates for Byline Learning Solutions, cutting deployment time by 40%.', 'Integrated robotics and embedded systems projects (Arduino/Raspberry Pi) featured in a nationally distributed project booklet.', 'Japan Study Tour (June 2024): Lectures at Chiba University and Ritsumeikan University.', 'Presented papers in conferences: ICAECT-2024, ACOIT-2024, ICDSM-2024.'],
     color: 'moss',
   },
   {
     year: '2025',
-    title: 'Full stack Developer | SME-ITC | Publications',
+    title: 'Full Stack Development | SME-ICT | Conference Speaker',
     picture: ['icons/developer_002_black.png', 'icons/developer_002_white.png'],
-    events: ['Built PHP based WordPress CMS for website, cutting deployment time by 40%', 'Created robotics/embedded projects (Arduino/Raspberry Pi), featured nationally', 'Added simulations to ITC Robotics chapter, adopted by 25+ institutions', 'Reviewed code/docs as SME, ensured industry-standard quality', 'Presented papers in conferences: ICETI4T-2025.'],
+    events: ['Built scalable WordPress CMS using PHP and JS.', 'Created robotics/embedded projects with simulations for the ICT Robotics chapter (adopted by 25+ institutions) and reviewed content as SME to ensure industry standards.', 'Presented papers in conferences: ICETI4T-2025.'],
     color: 'ocean',
   },
 ];
@@ -105,26 +105,27 @@ export const researchInterests = {
 // professionla experience
 export const professionalExperiences = [
   {
-    title: 'Software Developer Intern | Full Stack Developer | SME-ITC',
+    title: 'Software Developer Intern | Full Stack Developer | SME-ICT',
     company: 'Byline Learning Solutions LLP., Pune.',
-    description: ['Built reusable WordPress components with PHP and JS.', 'Developed educational robotics modules for classrooms.'],
+    description: ['Built reusable WordPress components with PHP and JS.', 'Developed educational robotics modules for classrooms.', 'Built scalable CMS and improved deployment efficiency by 40%.'],
   },
   {
     title: 'Frontend Developer Intern',
     company: 'M/s Technospirit, Hyderabad.',
-    description: ['Optimized frontend component rendering using React and TailwindCSS.', 'Collaborated with VLSI design team to model frontend simulations.'],
+    description: ['Optimized frontend component rendering using React and TailwindCSS.', 'Collaborated with VLSI design team to model frontend simulations.', 'Supported RTL design and logic simulation using Verilog & Xilinx Vivado.'],
   },
   {
-    title: 'Full Stack Developer | Volunteer ',
+    title: 'Full Stack Developer | Volunteer',
     company: 'Door Step School (NGO), Pune',
     description: ['Created a donor management system for tracking contributions.', 'Improved website performance and mobile responsiveness.'],
   },
   {
     title: 'Student Researcher',
     company: 'Symbiosis International (Deemed University), Pune',
-    description: ['Conducted advanced research in AI, machine learning, and robotics to contribute to innovative solutions.', 'Collaborated with interdisciplinary teams to develop and implement cutting-edge technologies.', 'Published research findings in top-tier journals and conferences like IEEE & Springer.'],
+    description: ['Conducted research in AI, machine learning, and robotics.', 'Collaborated with interdisciplinary teams to develop tech solutions.', 'Published research findings in top-tier journals and conferences like IEEE & Springer.'],
   },
 ];
+
 export const achievements = [
   {
     title: 'Academic & Research',

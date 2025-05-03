@@ -18,7 +18,7 @@ const Timeline = () => {
         const color = colorMap[item.color];
         const bgOpaqueColor = color.bg
           .split(' ')
-          .map((c) => c.replace(/\/\d+$/, '')) // Remove opacity suffix from both variants
+          .map((c) => c.replace(/\/\d+$/, ''))
           .join(' ');
         const arrowClass = arrowClasses[item.color]?.[isLeft ? 'right' : 'left'];
 

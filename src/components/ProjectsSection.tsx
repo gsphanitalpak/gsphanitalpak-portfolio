@@ -27,7 +27,7 @@ export default function ProjectsSection() {
             <h2 className="section-title mb-4 text-left">My Projects</h2>
             <div className="w-20 h-1 bg-primary rounded-full mb-6"></div>
           </div>
-          <p className="text-xl text-gray-600 dark:text-gray-400 mx-auto text-left mb-4">This collection showcases my expertise, developed through hands-on projects in software development, research, and system design. I have concentrated on designing impactful solutions, optimizing algorithms, and working with technologies such as machine learning, robotics, IoT, cloud computing, and blockchain to create effective systems across diverse domains.</p>
+          <p className="text-xl text-gray-600 dark:text-gray-400 mx-auto text-left mb-4">A showcase of my hands-on work in software, research, and system design—focused on building smart, efficient solutions using ML, robotics, IoT, cloud, and blockchain.</p>
 
           {/* Filters */}
           <Card className="overflow-hidden flex">

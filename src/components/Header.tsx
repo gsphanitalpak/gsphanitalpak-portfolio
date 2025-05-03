@@ -78,7 +78,7 @@ return (
           {darkMode ? <SunIcon className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
         </Button>
 
-        <Button variant="default" className="hidden md:inline-flex" onClick={() => window.open('public/gsp_cv.pdf', '_blank')}>
+        <Button variant="default" className="hidden md:inline-flex" onClick={() => window.open('gsp_cv.pdf', '_blank')}>
           Resume
         </Button>
 

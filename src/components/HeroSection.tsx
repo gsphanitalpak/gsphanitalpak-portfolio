@@ -14,7 +14,7 @@ export default function HeroSection() {
 
   const handleDownloadCV = () => {
     const link = document.createElement('a');
-    link.href = '/gsp_cv.pdf';
+    link.href = 'gsp_cv.pdf';
     link.download = 'santhosh-gandhala-cv';
     link.click();
   };
@@ -25,9 +25,7 @@ export default function HeroSection() {
 
   return (
     <section id="home" ref={containerRef} className="min-h-screen flex flex-col justify-between px-4 relative overflow-hidden bg-background text-foreground transition-colors duration-300">
-      <div className="absolute inset-0 z-[-3] bg-gradient-to-b from-[#090909] to-black opacity-80" />
-
-      <div className="container-custom relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto py-20">
+      <div className="container-custom relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full max-w-7xl mx-auto">
         {/* TEXT CONTENT */}
         <div className="space-y-8 text-center lg:text-left">
           <motion.div custom={0} initial="hidden" animate="visible" variants={fadeInUpVariants} className="inline-block rounded-full bg-primary/10 px-4 py-2 text-sm font-medium text-primary">
