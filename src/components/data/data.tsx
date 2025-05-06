@@ -195,7 +195,7 @@ export const skillCategories: SkillCategory[] = [
     subcategories: [
       {
         name: 'Languages',
-        skills: ['English (Business Fluent)', 'Japanese (JLPT N5)', 'Hindi (Fluent)', 'Telugu (Native)'],
+        skills: ['English (Fluent)', 'Telugu (Native)', 'Hindi (Fluent)', 'Japanese (JLPT N5)'],
       },
       {
         name: 'Soft Skills',

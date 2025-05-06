@@ -15,7 +15,7 @@ export default function ResearchSection() {
   };
 
   return (
-    <section id="research" className="py-0 bg-gray-50 dark:bg-gray-900/30">
+    <section id="research" className="py-0 bg-background">
       <div className="container-custom">
         {/* Section Heading */}
         <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.6 }} className="text-center space-y-4 mb-12">
