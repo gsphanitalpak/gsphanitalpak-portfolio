@@ -35,10 +35,16 @@ export const timelineData = [
   },
   {
     year: '2025',
-    title: 'Full Stack Development | SME-ICT | Conference Speaker',
-    picture: ['icons/developer_002_black.png', 'icons/developer_002_white.png'],
-    events: ['Built scalable WordPress CMS using PHP and JS.', 'Created robotics/embedded projects with simulations for the ICT Robotics chapter (adopted by 25+ institutions) and reviewed content as SME to ensure industry standards.', 'Presented papers in conferences: ICETI4T-2025.'],
-    color: 'ocean',
+title: 'Full Stack Development | SME-ICT | STEM Trainer',
+picture: ['icons/developer_002_black.png', 'icons/developer_002_white.png'],
+events: [
+  'Built scalable WordPress CMS using PHP and JS.',
+  'Created robotics/embedded projects with simulations for the ICT Robotics chapter (adopted by 25+ institutions) and reviewed content as SME to ensure industry standards.',
+  'Delivered hands-on STEM & robotics instruction to K–8 students using project-based learning and design thinking methodologies.',
+  'Designed classroom innovation challenges and guided students in prototype building, testing, and presentations.',
+  'Presented papers in multiple conferences'
+],
+color: 'ocean',
   },
 ];
 
