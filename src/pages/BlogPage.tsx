@@ -66,30 +66,37 @@ const BlogPage = () => {
 
             {selectedBlog && (
               <Dialog open={isOpen} onOpenChange={handleClose}>
-                <DialogContent className="max-w-6xl h-[80vh] w-full m-8">
-                  <DialogHeader className="space-y-4 mb-4">
-                    <DialogTitle className="text-2xl font-bold m-4">{selectedBlog.title}</DialogTitle>
-                    <p className="text-sm text-muted-foreground m-4">{selectedBlog.date}</p>
-                  </DialogHeader>
-                  <div className="overflow-y-auto h-full space-y-4 px-1 m-4">
-                    <div className="w-full flex justify-center m-4">
-                      <div className="w-[50vw] rounded-lg overflow-hidden">
-                        <img src={selectedBlog.image} alt={selectedBlog.title} className="w-full h-auto object-cover rounded-md mb-4" />
+                <div className="fixed inset-0 flex items-center justify-center p-2 sm:p-4 md:p-8">
+                  <DialogContent className="w-full sm:w-[95vw] md:max-w-[90%] h-full sm:h-auto md:h-[80vh] rounded-xl overflow-hidden">
+                    <DialogHeader className="space-y-2 sm:space-y-4 mb-2 sm:mb-4">
+                      <DialogTitle className="text-xl sm:text-2xl font-bold mx-2 sm:mx-4">{selectedBlog.title}</DialogTitle>
+                      <p className="text-xs sm:text-sm text-muted-foreground mx-2 sm:mx-4">{selectedBlog.date}</p>
+                    </DialogHeader>
+
+                    <div className="overflow-y-auto h-[calc(100%-6rem)] px-2 sm:px-4 space-y-4">
+                      <div className="w-full flex justify-center px-2">
+                        <div className="w-full sm:w-[50vw] rounded-lg overflow-hidden">
+                          <img src={selectedBlog.image} alt={selectedBlog.title} className="w-full h-auto object-cover rounded-md mb-4" />
+                        </div>
+                      </div>
+
+                      <div
+                        className="prose prose-gray dark:prose-invert max-w-none px-2 sm:px-4
+            prose-headings:font-semibold
+            prose-h1:text-2xl sm:prose-h1:text-3xl
+            prose-h2:text-xl sm:prose-h2:text-2xl
+            prose-h3:text-lg sm:prose-h3:text-xl
+            prose-p:leading-relaxed
+            prose-li:leading-relaxed prose-li:my-1
+            prose-ul:pl-5 prose-ol:pl-5
+            prose-pre:rounded-lg prose-pre:p-4 prose-pre:bg-zinc-100 prose-pre:text-zinc-800 dark:prose-pre:bg-gray-900
+            prose-code:bg-zinc-200 prose-code:text-zinc-900 prose-code:dark:bg-gray-800 prose-code:dark:text-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded"
+                      >
+                        <ReactMarkdown children={selectedBlog.content} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeHighlight]} />
                       </div>
                     </div>
-
-                    <div
-                      className="m-4 prose prose-gray dark:prose-invert max-w-none
-  prose-headings:font-semibold
-  prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl
-  prose-p:leading-relaxed prose-li:leading-relaxed prose-li:my-1 prose-ul:pl-5 prose-ol:pl-5
-  prose-pre:rounded-lg prose-pre:p-4 prose-pre:bg-zinc-100 prose-pre:text-zinc-800 dark:prose-pre:bg-gray-900
-  prose-code:bg-zinc-200 prose-code:text-zinc-900 prose-code:dark:bg-gray-800 prose-code:dark:text-gray-100 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded"
-                    >
-                      <ReactMarkdown children={selectedBlog.content} remarkPlugins={[remarkGfm]} rehypePlugins={[rehypeRaw, rehypeHighlight]} />
-                    </div>
-                  </div>
-                </DialogContent>
+                  </DialogContent>
+                </div>
               </Dialog>
             )}
           </div>

@@ -45,7 +45,7 @@ export default function TypingEffect({ words, typingSpeed = 100, deletingSpeed =
     >
       <span className="inline-block align-baseline">
         {text}
-        <span className="inline-block align-baseline bg-primary dark:bg-primary animate-blink" style={{ width: '1ch', height: '1em', marginLeft: '2px' }} />
+        <span className="inline-block align-baseline bg-primary dark:bg-primary animate-blink" style={{ width: '1ch', height: '0.1em', marginLeft: '2px' }} />
       </span>
     </span>
   );

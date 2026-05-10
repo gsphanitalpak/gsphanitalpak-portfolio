@@ -68,13 +68,13 @@ const Timeline = () => {
               <div className={cn('w-full sm:w-1/2 text-sm leading-relaxed px-16 relative z-10', isLeft ? 'text-left' : 'text-right')}>
                 <div className={cn('text-2xl font-bold mb-2', color.text)}>{item.year}</div>
                 <div className={cn('text-lg font-semibold mb-4', color.text)}>{item.title}</div>
-                <div className="space-y-4">
+                <ul className="space-y-4">
                   {item.events.map((e, i) => (
-                    <div key={i} className={cn(i % 2 === 1 ? 'font-medium text-md' : 'text-gray-900 dark:text-[#e7e7e7]', 'leading-snug')}>
+                    <li key={i} className={cn(i % 2 === 1 ? 'font-medium text-md' : 'text-gray-900 dark:text-[#e7e7e7]', 'leading-snug')}>
                       {e}
-                    </div>
+                    </li>
                   ))}
-                </div>
+                </ul>
               </div>
               <div className="flex-row">
                 <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-20">

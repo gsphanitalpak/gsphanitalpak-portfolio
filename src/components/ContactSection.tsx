@@ -87,26 +87,28 @@ export default function ContactSection() {
         </motion.div>
 
         <div className="grid ">
-          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.5 }} className="flex-grow space-y-6 w-full">
-            <Card>
+          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.5 }} className="flex-grow w-full max-w-3xl mx-auto space-y-6 px-4 sm:px-6">
+            <Card className="rounded-xl shadow-md border border-gray-200 dark:border-gray-700">
               <CardHeader>
-                <CardTitle>Contact Information</CardTitle>
-                <CardDescription>Here are the ways you can reach me directly.</CardDescription>
+                <CardTitle className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white">Let’s Connect</CardTitle>
+                <CardDescription className="text-base text-muted-foreground">Trusted by professionals and collaborators worldwide. Feel free to reach out—your message matters.</CardDescription>
               </CardHeader>
+
               <CardContent className="space-y-4">
                 {contactInfo.map((info, index) => (
-                  <a key={index} href={info.link} target="_blank" rel="noopener noreferrer" className="flex items-start space-x-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 transition-colors">
-                    <div className="text-3xl">{info.icon}</div>
+                  <a key={index} href={info.link} target="_blank" rel="noopener noreferrer" className="group flex items-start sm:items-center space-x-4 p-4 rounded-lg border border-transparent hover:border-primary/20 hover:bg-muted/30 dark:hover:bg-muted/10 transition-all duration-200">
+                    <div className="text-3xl sm:text-4xl text-primary group-hover:scale-105 transition-transform duration-200">{info.icon}</div>
                     <div>
-                      <p className=" text-gray-600 dark:text-gray-400">{info.title}</p>
-                      <h3 className="font-medium">{info.value}</h3>
+                      <p className="text-sm text-muted-foreground">{info.title}</p>
+                      <h3 className="text-lg font-semibold text-gray-900 dark:text-white">{info.value}</h3>
                     </div>
                   </a>
                 ))}
               </CardContent>
             </Card>
+          </motion.div>
 
-            {/* <Card>
+          {/* <Card>
               <CardHeader>
                 <CardTitle>Office Hours</CardTitle>
                 <CardDescription>Schedule a virtual meeting with me.</CardDescription>
@@ -128,7 +130,6 @@ export default function ContactSection() {
                 </div>
               </CardContent>
             </Card> */}
-          </motion.div>
 
           {/* <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, margin: '-100px' }} transition={{ duration: 0.5 }} className="lg:col-span-3">
             <Card>

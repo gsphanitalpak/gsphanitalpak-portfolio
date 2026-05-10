@@ -16,7 +16,7 @@ export default function ProjectsSection() {
   const filteredProjects = projects.filter((project) => filter === 'All Projects' || project.type.includes(filter));
 
   // const displayedProjects = filteredProjects.slice(0, 6); //in order
-  const displayedProjects = [...filteredProjects].reverse().slice(0, 6); //latest first
+  const displayedProjects = [...filteredProjects].reverse().slice(0, 3); //latest first
 
   return (
     <section id="projects" className="py-20">
@@ -30,7 +30,7 @@ export default function ProjectsSection() {
           <p className="text-xl text-gray-600 dark:text-gray-400 mx-auto text-left mb-4">A showcase of my hands-on work in software, research, and system design—focused on building smart, efficient solutions using ML, robotics, IoT, cloud, and blockchain.</p>
 
           {/* Filters */}
-          <Card className="overflow-hidden flex">
+          {/* <Card className="overflow-hidden flex">
             <div className="bg-primary/10 flex items-center justify-center px-2">
               <h4 className="font-semibold rotate-[-90deg] whitespace-nowrap">Filters</h4>
             </div>
@@ -43,7 +43,7 @@ export default function ProjectsSection() {
                 ))}
               </div>
             </CardContent>
-          </Card>
+          </Card> */}
         </motion.div>
 
         {/* Project Grid */}
