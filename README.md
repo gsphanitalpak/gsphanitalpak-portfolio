@@ -96,7 +96,7 @@ gsphanitalpak-portfolio
 ## 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone (https://github.com/gsphanitalpak/gsphanitalpak-portfolio.git)
 ```
 
 ---
@@ -104,7 +104,7 @@ git clone <your-repository-url>
 ## 2. Navigate Into Project
 
 ```bash
-cd your-project-name
+cd gsphanitalpak-portfolio
 ```
 
 ---
