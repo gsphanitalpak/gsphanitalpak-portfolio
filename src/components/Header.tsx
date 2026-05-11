@@ -90,7 +90,7 @@ export default function Header() {
             <Link
               key={item.name}
               to={item.href}
-              className="text-xl font-medium hover:text-primary transition-colors link-underline"
+              className="text-lg lg:text-xl font-medium hover:text-primary transition-colors link-underline"
             >
               {item.name}
             </Link>
