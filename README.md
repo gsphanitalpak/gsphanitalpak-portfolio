@@ -207,9 +207,3 @@ Built using:
 # 📜 License
 
 This project is licensed under the MIT License.
-
----
-
-# 💡 Philosophy
-
-> Building thoughtful digital experiences through clean engineering, intelligent systems, and research-driven development.
