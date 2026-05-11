@@ -1,159 +1,215 @@
+# Modern Developer Portfolio
 
+A modern, interactive, and research-focused portfolio built using React, TypeScript, Vite, and Tailwind CSS.
 
-```
+Designed to showcase:
+
+- Software engineering projects
+- Applied AI & robotics work
+- Research publications
+- Technical blogs
+- Academic and professional achievements
+
+---
+
+# ✨ Features
+
+## 🎨 Modern UI/UX
+
+- Fully responsive design
+- Light/Dark theme support
+- Smooth Framer Motion animations
+- Interactive project cards
+- Glassmorphism-inspired UI
+- Accessible and semantic components
+- Mobile-first responsive layout
+
+---
+
+## 🧠 Portfolio Sections
+
+- Hero / Introduction
+- About
+- Projects Showcase
+- Research & Publications
+- Blog
+- Contact Section
+- Timeline / Experience
+
+---
+
+## ⚙️ Technical Features
+
+- React + TypeScript + Vite
+- Tailwind CSS v4
+- Framer Motion animations
+- Modular component architecture
+- Reusable UI system
+- Lazy-loaded assets
+- Theme persistence
+- GitHub Pages deployment
+
+---
+
+# 🛠️ Tech Stack
+
+| Category      | Technologies            |
+| ------------- | ----------------------- |
+| Frontend      | React, TypeScript, Vite |
+| Styling       | Tailwind CSS            |
+| Animation     | Framer Motion           |
+| Routing       | React Router DOM        |
+| UI Components | shadcn/ui               |
+| Icons         | Lucide React            |
+| Deployment    | GitHub Pages            |
+
+---
+
+# 📂 Project Structure
+
+```bash
 gsphanitalpak-portfolio
-├─ README.md
-├─ bun.lockb
-├─ components.json
-├─ eslint.config.js
-├─ index.html
-├─ package-lock.json
-├─ package.json
-├─ postcss.config.js
 ├─ public
-│  ├─ 3d-avatar.png
-│  ├─ about_image.png
-│  ├─ automation.svg
 │  ├─ blog
-│  │  ├─ general-tab.png
-│  │  ├─ headless-pi-vnc copy.png
-│  │  ├─ headless-pi-vnc.png
-│  │  ├─ notes-app.png
-│  │  ├─ pi-model.png
-│  │  ├─ sd-card.jpeg
-│  │  └─ services-tab.png
-│  ├─ favicon.ico
-│  ├─ final_logo_black.svg
-│  ├─ final_logo_white.svg
-│  ├─ gsp_cv.pdf
-│  ├─ gsp_logo_b-w.svg
-│  ├─ gsp_logo_color.svg
 │  ├─ icons
-│  │  ├─ code.svg
-│  │  ├─ developer_002_black.png
-│  │  ├─ developer_002_white.png
-│  │  ├─ developer_black.png
-│  │  ├─ developer_white.png
-│  │  ├─ graduation_black.png
-│  │  ├─ graduation_white.png
-│  │  ├─ intermediate_black.png
-│  │  ├─ intermediate_white.png
-│  │  ├─ japan_black.png
-│  │  ├─ japan_white.png
-│  │  ├─ research.svg
-│  │  ├─ robot.svg
-│  │  ├─ robotics.svg
-│  │  ├─ robotics_trainer_black.png
-│  │  └─ robotics_trainer_white.png
-│  ├─ logo_001.png
-│  ├─ placeholder.svg
 │  └─ projects
-│     ├─ adhvaya.png
-│     ├─ arduino-quadcopter.jpg
-│     ├─ art-portfolio.png
-│     ├─ banking-bot.png
-│     ├─ blender-rotot.png
-│     ├─ byline.png
-│     ├─ doorstepschool.png
-│     ├─ driver-drowsiness-iot.png
-│     ├─ facial-recognition-flask.png
-│     ├─ facial-recognition.jpg
-│     ├─ flight-prices.png
-│     ├─ illustration-personal.png
-│     ├─ java-homework-planner.png
-│     ├─ notes-app.png
-│     ├─ portfolio.jpg
-│     ├─ post-retirement.png
-│     ├─ prompt-bot.png
-│     └─ stresssense.png
+│
 ├─ src
-│  ├─ App.css
-│  ├─ App.tsx
 │  ├─ components
-│  │  ├─ AboutSection.tsx
-│  │  ├─ ContactSection.tsx
-│  │  ├─ Footer.tsx
-│  │  ├─ Header.tsx
-│  │  ├─ HeroSection.tsx
-│  │  ├─ ProjectsSection.tsx
-│  │  ├─ ResearchSection.tsx
-│  │  ├─ Timeline.tsx
-│  │  ├─ data
-│  │  │  └─ data.tsx
-│  │  └─ ui
-│  │     ├─ accordion.tsx
-│  │     ├─ alert-dialog.tsx
-│  │     ├─ alert.tsx
-│  │     ├─ aspect-ratio.tsx
-│  │     ├─ avatar.tsx
-│  │     ├─ badge.tsx
-│  │     ├─ breadcrumb.tsx
-│  │     ├─ button.tsx
-│  │     ├─ calendar.tsx
-│  │     ├─ card.tsx
-│  │     ├─ carousel.tsx
-│  │     ├─ chart.tsx
-│  │     ├─ checkbox.tsx
-│  │     ├─ collapsible.tsx
-│  │     ├─ command.tsx
-│  │     ├─ context-menu.tsx
-│  │     ├─ dialog.tsx
-│  │     ├─ drawer.tsx
-│  │     ├─ dropdown-menu.tsx
-│  │     ├─ form.tsx
-│  │     ├─ hover-card.tsx
-│  │     ├─ input-otp.tsx
-│  │     ├─ input.tsx
-│  │     ├─ label.tsx
-│  │     ├─ menubar.tsx
-│  │     ├─ navigation-menu.tsx
-│  │     ├─ pagination.tsx
-│  │     ├─ popover.tsx
-│  │     ├─ progress.tsx
-│  │     ├─ radio-group.tsx
-│  │     ├─ resizable.tsx
-│  │     ├─ scroll-area.tsx
-│  │     ├─ select.tsx
-│  │     ├─ separator.tsx
-│  │     ├─ sheet.tsx
-│  │     ├─ sidebar.tsx
-│  │     ├─ skeleton.tsx
-│  │     ├─ slider.tsx
-│  │     ├─ sonner.tsx
-│  │     ├─ switch.tsx
-│  │     ├─ table.tsx
-│  │     ├─ tabs.tsx
-│  │     ├─ textarea.tsx
-│  │     ├─ toast.tsx
-│  │     ├─ toaster.tsx
-│  │     ├─ toggle-group.tsx
-│  │     ├─ toggle.tsx
-│  │     ├─ tooltip.tsx
-│  │     └─ use-toast.ts
+│  │  ├─ ui
+│  │  └─ data
+│  │
 │  ├─ hooks
-│  │  ├─ TypingEffects.tsx
-│  │  ├─ constants.ts
-│  │  ├─ motionVariants.ts
-│  │  ├─ use-mobile.tsx
-│  │  ├─ use-toast.ts
-│  │  └─ useScrollGlow.tsx
-│  ├─ index.css
 │  ├─ lib
-│  │  └─ utils.ts
-│  ├─ main.tsx
 │  ├─ pages
-│  │  ├─ About.tsx
-│  │  ├─ BlogPage.tsx
-│  │  ├─ Contact.tsx
-│  │  ├─ Index.tsx
-│  │  ├─ NotFound.tsx
-│  │  ├─ Projects.tsx
-│  │  └─ Research.tsx
-│  └─ vite-env.d.ts
+│  └─ styles
+│
 ├─ tailwind.config.ts
-├─ tsconfig.app.json
-├─ tsconfig.json
-├─ tsconfig.node.json
-└─ vite.config.ts
-
+├─ vite.config.ts
+└─ package.json
 ```
+
+---
+
+# 🚀 Getting Started
+
+## 1. Clone the Repository
+
+```bash
+git clone <your-repository-url>
+```
+
+---
+
+## 2. Navigate Into Project
+
+```bash
+cd your-project-name
+```
+
+---
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+---
+
+## 4. Start Development Server
+
+```bash
+npm run dev
+```
+
+---
+
+## 5. Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+# 🌐 Deployment
+
+This project is configured for GitHub Pages deployment.
+
+## Deploy Command
+
+```bash
+npm run deploy
+```
+
+---
+
+# 📸 Assets Included
+
+- Project previews
+- SVG illustrations
+- Blog images
+- Portfolio branding assets
+- Theme-based logos/icons
+
+---
+
+# 📦 Main Dependencies
+
+```json
+{
+  "react": "^18",
+  "typescript": "^5",
+  "vite": "^5",
+  "tailwindcss": "^4",
+  "framer-motion": "^11",
+  "react-router-dom": "^6",
+  "lucide-react": "^0"
+}
+```
+
+---
+
+# 🧩 UI Components
+
+The project uses a reusable component architecture including:
+
+- Buttons
+- Cards
+- Dialogs
+- Accordions
+- Tooltips
+- Tabs
+- Toast notifications
+- Navigation menus
+- Forms
+- Sheets / Drawers
+
+Built using:
+
+- shadcn/ui
+- Radix UI primitives
+
+---
+
+# 📚 Future Improvements
+
+- 3D interactive avatar system
+- Multi-language support
+- CMS-powered blog
+- Analytics dashboard
+- AI-powered interactions
+- Research visualization tools
+
+---
+
+# 📜 License
+
+This project is licensed under the MIT License.
+
+---
+
+# 💡 Philosophy
+
+> Building thoughtful digital experiences through clean engineering, intelligent systems, and research-driven development.
